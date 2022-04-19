@@ -8,7 +8,7 @@ use App\Http\Controllers\RestController;
 // Route::apiResource('/v1/rest', RestController::class);
 
 Route::apiResource('/v1/rest', RestController::class)->only([
-  'index', 'store', 'show', 'destroy'
+  'index', 'store', 'show', 'update', 'destroy'
 ]);
 
 Route::get('/hello', function () {
